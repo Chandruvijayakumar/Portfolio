@@ -1,0 +1,27 @@
+@keyframes borderColorAnimation {
+  0% {
+    border-color: #f2f2f2;
+  }
+  25% {
+    border-color: #585858;
+  } /* red */
+  50% {
+    border-color: #000000;
+  } /* green */
+  75% {
+    border-color: #0000ff;
+  } /* blue */
+  100% {
+    border-color: #f2f2f2;
+  } /* back to original */
+}
+
+.myAvtar img {
+  animation: borderColorAnimation 4s infinite; /* 4 seconds looping */
+  border-radius: 50%;
+  width: 400px;
+  height: 400px;
+  object-fit: cover;
+  transition: transform 0.5s ease-in-out;
+  border: 2px solid; /* Initial border without color */
+}
